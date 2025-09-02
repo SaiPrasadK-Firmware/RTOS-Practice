@@ -4,49 +4,42 @@ Hands-on FreeRTOS (CMSIS-RTOS v2 API) examples and mini-projects on STM32, explo
 
 
 
-💡 Practical RTOS concepts on STM32 using FreeRTOS with CMSIS-RTOS v2 API
+# RTOS-Lab 🚀
 
-This repo is a hands-on lab for learning real-time operating systems on embedded systems.
-It contains mini-projects that demonstrate synchronization, communication, and scheduling features of FreeRTOS on STM32 microcontrollers.
+Hands-on repo for exploring **FreeRTOS concepts** with STM32.  
+Each folder contains a **mini-project** demonstrating a real-time OS concept with code + explanation.
 
-Each project is built using:
+---
 
-STM32F401RE Nucleo Board (but portable to other STM32 boards)
+## 📂 Folder Layout
+- `01_Mutex` → Protecting shared resources (counter, UART, I2C bus).
+- `02_Semaphores` → Task synchronization with binary & counting semaphores.
+- `03_Queues` → Safe data transfer (producer-consumer, task communication).
+- `04_Timers` → Software timers for periodic tasks and watchdog handling.
+- `05_TaskManagement` → Task priorities, preemption, and scheduling.
 
-STM32CubeIDE with FreeRTOS middleware enabled
+---
 
-CMSIS-RTOS v2 API for task creation, synchronization, and resource management
+## ⚙️ Requirements
+- STM32F401RE (Nucleo Board)  
+- STM32CubeIDE + FreeRTOS middleware  
+- UART (via ST-Link or USB-TTL) for debugging  
 
-UART (115200 baud) for debugging and output
+---
 
-📂 What’s Inside
+## 🚀 How to Run
+1. Clone this repo.
+2. Open any project folder in **STM32CubeIDE**.
+3. Flash to STM32 board.
+4. Monitor UART output at **115200 baud**.
 
-01_Mutex → Safe access to shared resources (counter, UART, I2C bus).
+---
 
-02_Semaphores → Task synchronization (binary + counting).
+## 🔥 Current Progress
+- ✅ `01_Mutex/Counter` → Global counter with and without mutex.  
+- 🚧 Next: `01_Mutex/UART_Logger`.  
 
-03_Queues → Producer-consumer and task communication.
+---
 
-04_Timers → Software timers and watchdog refresh.
-
-05_TaskManagement → Task priorities, preemption, round robin.
-
-🚀 Why This Repo?
-
-This repo is not just “hello world” — each example is designed to:
-
-Show the problem without RTOS sync (race conditions, corrupted data).
-
-Show the solution using FreeRTOS features (mutex, semaphores, queues).
-
-Provide clean, interview-ready explanations + code.
-
-⚙️ How to Run
-
-Clone this repo.
-
-Open a project folder in STM32CubeIDE.
-
-Build & flash to STM32 board.
-
-Open a UART terminal at 115200 baud to view logs.
+## 📜 License
+MIT License
