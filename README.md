@@ -4,7 +4,7 @@ Hands-on FreeRTOS (CMSIS-RTOS v2 API) examples and mini-projects on STM32, explo
 
 
 
-# RTOS-Lab 🚀
+
 
 Hands-on repo for exploring **FreeRTOS concepts** with STM32.  
 Each folder contains a **mini-project** demonstrating a real-time OS concept with code + explanation.
